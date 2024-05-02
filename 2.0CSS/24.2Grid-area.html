@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+        padding: 0;
+        box-sizing: border-box;}
+.container{
+    display: grid;
+    grid-template-areas: 
+    'h h h h h h'
+    '. m m m s .'
+    '. tt tt t t .'
+    'f f f f f f';
+}
+.box{
+    padding: 50px; border: 2px solid white;
+   
+}
+.header{
+    grid-area: h; background-color: #52A7F9;
+}
+.main-content{
+    grid-area: m; background-color:#6FC041;
+}
+.sidebar{
+    grid-area: s; background-color: #B36AE2;
+}
+.twin1{
+    grid-area: tt; background-color: #F3901A;
+}
+.twin2{
+    grid-area: t;background-color: #F3901A;
+}
+.footer{
+    grid-area: f; background-color: #0365C0;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header box">HEADER</div>
+        <div class="main-content box">MAIN-CONTENT</div>
+        <div class="sidebar box">SIDEBAR</div>
+        <div class="twin1 box"> TWIN 1</div>
+        <div class="twin2 box">TWIN 2</div>
+        <div class="footer box">FOOTER</div>
+    </div>
+</body>
+</html>

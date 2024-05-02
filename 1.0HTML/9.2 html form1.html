@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form1</title>
+</head>
+
+<body>
+    <main>
+        <form action="http://abc.com" target="_blank" method="get">
+            <p>fieldset is used for bordering the form and legends is used for providing form name. <br> action inside
+                form tag-it is the link where data are sent</p>
+            <p><b>if you want any input tag compulsory. just write "required" in that input tag, e.g see email and age1
+                    <br> try sending form without filling any data </b></p>
+
+
+            <fieldset>
+                <legend>Html form1</legend>
+                <p><b>giving name to input is must. it is done for passing the value</b></p>
+                First name<input type="text" name="fname">
+                <hr>
+                <p><b>if you want, when you click on 'last name' then its corresponding box gets selected then use label
+                        tag. <br> for relating
+                        label tag and input tag, there should be 'for' attribute inside
+                        label tag and 'id' attribute inside the corresponding input tag. <br> both attribute should be
+                        given same name </b> </p>
+
+                <label for="xyz">Last name </label> <input type="text" name="lname" id="xyz">
+                <hr>
+                <p><b>if 'value=smthng' written inside input tag, default data is set to 'smthng'. <br>but that value or
+                        data is modifiable and modified data is sent to 'action link' of form </b></p>
+
+                Country <input type="text" name="desh" value="Nepal" >
+                Country <input type="text" name="desh" value="Nepal" readonly>
+                <hr>
+                <p> <b> in age, dont forget to set type=number, min and max value and most importantly name
+                        attribute</b> </p>
+                Enter Age1 <input type="number" name="age" min="0" max="20" required>
+                <hr>
+                <p><b>in this section, there is step(2) inside input tag. it means age is increased in multiple
+                        of 2 and
+                        only age which is multiple of 2 is selected</b></p>
+                Enter Age 2<input type="number" name="age" min="0" max="20" step="2">
+                <hr>
+                <p><b>when input type is email, it requires @ sign form completion</b></p>
+                Enter email<input type="email" name="mailid" required>
+                <hr>
+                <p><b><i>in this section, password is not visible inside box. <br> but we can see the password
+                            inside
+                            url
+                            above. <br> for that there is concept of 'method' inside form tag. <br> method=get
+                            (default)
+                            means pwd(ALSO OTHER DATA)
+                            is visible while method=post means pwd is not visible in the url</i></b></p>
+                Password<input type="password" name="pwd">
+                <hr>
+
+
+                <b>default type is submit. if you want to change it into "Login, Ok", set the value to Login or
+                    ok</b>
+                <br>
+                <input type="submit" name="send" >
+                <hr>
+                <input type="submit" name="send" value="LOGIN">
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

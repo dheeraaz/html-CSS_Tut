@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 1900px;
+        }
+
+        /* parent box lai chai relative position diney */
+        .box1 {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            position: relative;
+        }
+
+        /* child box lai absolute position diney */
+        .a {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+        }
+
+        .b {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            z-index: 1;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            position: fixed;
+            right: 0;
+            padding: 5px 5px;
+        }
+
+        .box3 {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="a">yo box tala huna parni, tara z-index ko karan ley mathi xa</div>
+        <div class="b"></div>
+        <p>yesma relative ra absolute position ko concept use vayeko xa <br> parent box lai relative position rakhni
+            <br> child box lai absolute position dine <br> aba child box parent box ko reference ma aafno position
+            change garxa <br> ra junn box ko z-index badhi hunxa tyo mathi aauxa
+        </p>
+
+    </div>
+    <div class="box2">This is example of fixed position <br> the box is moved right using "right" attribute <br>yesma
+        margin ra padding ko concept pani use gareko xa</div>
+    <div class="box3">This is example of sticky position, yesma top bata 0px vayepaxi box stick hunxa</div>
+</body>
+
+</html>

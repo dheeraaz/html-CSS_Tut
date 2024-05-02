@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Around</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        .box{
+            background-color: tomato; padding: 30px; display: flex;
+            flex-direction: row-reverse; /*row (default), row-reverse, column, column-reverse */
+            flex-wrap: wrap; /*nowrap(default), wrap */
+            /* flex-flow: row wrap;  combnation of flex direction and flex wrap */
+            height: 500px;
+            justify-content: center; /*flex-start(default), flex-end, center, space-between, space around, justify content is for horizontal*/
+            align-items: center;/*flex-start, flex-end, center, baseline, stretch*/
+            align-content: space-between; /*space-around, space-between*/
+        }
+        .a{
+            border: 2px solid red; padding: 50px; width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="a">A</div>
+        <div class="a">B</div>
+        <div class="a">C</div>
+        <div class="a">D</div>
+    </div>
+    <div>
+        <h2>Flex property for parent</h2>
+        <p>flex-direction:row (default), row-reverse, column, column-reverse <b>yesle child content ko orientation ra tesko start position determine garxa</b></p>
+        <p>flex-wrap:nowrap(default), wrap <b>wrap rakhda chai child content ko defined width nai rahanaxa &nbsp; &nbsp; &nbsp; nowrap huda chai browser ley aafai width milauxa</b></p>
+        <p>flex-flow:row wrap; <b>it is simply the combination of flex-direction and flex-wrap</b></p>
+        <p>justfy-content: flex-start(default), flex-end, center, space-between, space around; <b>it aligns the child content in horizontal direction</b> </p>
+        <p>align-item:flex-start, flex-end, center, baseline, stretch <b>it only aligns the child content in vertical direction</b></p>
+        <p>align-content:space-around, space-between <b>it is used for defining the space of child content in verticl direction</b></p>
+    </div>
+</body>
+</html>

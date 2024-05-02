@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container {
+            background-color: burlywood;
+            border: 2px solid red;
+            width: 900px;
+            margin: auto;
+        }
+
+        .item {
+            background-color: #ccd2d2;
+            border: 3px solid #5555b5;
+            margin: 10px 10px;
+            padding: 24px 12px;
+        }
+        #fruits{
+            float:right;
+            width: 48%;
+            text-align: justify;
+        }
+        #computer{
+            float:left;
+            width:48%;
+            text-align: justify;
+        }
+        #stationary{
+            clear:both;
+            text-align: justify;
+        }
+        #vegetables{
+            clear:both;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet commodi fugiat
+                necessitatibus velit est corporis quos sunt, eaque voluptatum, error architecto perferendis, consequatur
+                possimus itaque maxime veniam facilis. Rem aliquam tempora necessitatibus nemo ex!</p>
+        </div>
+        <div id="Computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet commodi
+                fugiat necessitatibus velit est corporis quos sunt, eaque voluptatum, error architecto perferendis,
+                consequatur possimus itaque maxime veniam facilis. Rem aliquam tempora necessitatibus nemo ex!</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet commodi
+                fugiat necessitatibus velit est corporis quos sunt, eaque voluptatum, error architecto perferendis,
+                consequatur possimus itaque maxime veniam facilis. Rem aliquam tempora necessitatibus nemo ex!</p>
+        </div>
+        <div id="vegetables" class="item">
+            <h3>vegetables</h3>
+            <p id="vegetablepara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet commodi
+                fugiat necessitatibus velit est corporis quos sunt, eaque voluptatum, error architecto perferendis,
+                consequatur possimus itaque maxime veniam facilis. Rem aliquam tempora necessitatibus nemo ex!</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units(em,rem,vh,vw)</title>
+    <style>
+        html {
+            font-size: 15px;
+        }
+
+        .container {
+            font-size: 10px;
+            border: 2px solid red;
+            /* if we want to set height and width according to screen size, we start increasing px size of height and width which is inconvenient method. there is alternative method of doing so. */
+           
+            /* width: 600px;    
+            height: 600px; */
+           
+            /* vh=viewport height and vw=viewport width  */
+            width: 100vw;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #first {
+            /* em makes the font size n times the size of parents size(container) (n)em, i.e. 3em==3*10px */
+            font-size: 3em;
+            /* once we set the font size, padding will be n times the font size in child element, i.e. 3em==3*30px */
+            padding: 3em;
+        }
+        #second{
+            /* rem makes the font size and padding n-times the fontsize given in html, (n)rem, i.e. 3rem=3*15px */
+            font-size: 3rem;
+            padding: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+
+</body>
+
+</html>

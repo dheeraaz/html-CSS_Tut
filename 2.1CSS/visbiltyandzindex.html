@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibilty and Z-index</title>
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+            margin: 2px;
+        }
+
+        /* about Visibilty */
+        #box1 {
+            /* it will hide the content and removes whole space  */
+            /* display: none; */
+            background-color: red;
+        }
+
+        #box2 {
+            /* it will hide the content but the space will reserved */
+            /* visibility: hidden; */
+            background-color: yellow;
+        }
+/* about Z-index  */
+/* when two boxes overlaps z-index determines whose box shown up*/
+/* z-index only works only in position element, position-relative,absolute,sticky and fixed */
+        #box3 {
+            background-color: blue;
+            position: relative;
+            top: 60px;
+            z-index: 4;
+        }
+/* initially box3 was overlapping box4, you can see it by removing both z-index */
+/* but after applying z-ndex green box overlapped the blue box */
+/* higher valued of z-index will overlapp the lower valued z-index */
+/* z-index can be used in case of multiple elements too  */
+        #box4 {
+            background-color: green;
+            position: relative;
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+</body>
+
+</html>

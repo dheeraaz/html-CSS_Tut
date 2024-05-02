@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 2D Transform</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transition: 1s;
+            transform-origin: 30px 100px;
+        }
+
+        .box:hover {
+            transform: rotate(360deg);
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            transition: 2s;
+        }
+
+        .box1:hover {
+            transform: scale(2, 3);
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            transition: 2s;
+        }
+
+        .box2:hover {
+            transform: skewX(60deg);
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transition: 4s;
+        }
+
+        .box3:hover {
+            transform: translate(800px, 0) rotate(360deg);
+        }
+
+        .box4 {
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) skewX(335deg) skewY(43deg);
+        }
+
+        .box5 {
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .box6 {
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        the transform-origin is at 30px(x-axis) and 100px(y-axis)
+    </div>
+    <div class="box1"> the box-enlarges or scales up by 2 times it original width and 3 times to its original height.
+        <br>there is also individual properties of:scaleX() and scaleY()
+    </div>
+    <div class="box2">makes 60deg with x-axis <br>for skewness in other-direction <br>use negative value of degree <br>
+        <br>other properties are: skewY(), skew(x-value,y-value)
+    </div>
+    <div class="box3">used transform property <br>used multiple properties of transform, i.e <br> translate(x-axis,
+        y-axis(=0)) <br> rotate(theta(360) deg) </div>
+
+    <div class="box4">for perfect centering
+        <div class="box5">
+            <div class="box6"></div>
+        </div>
+    </div>
+</body>
+
+</html>

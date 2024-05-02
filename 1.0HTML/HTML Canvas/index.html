@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="canvas_div">
+        <canvas id="myCanvas"></canvas>
+    </div>
+
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const context = canvas.getContext("2d");
+        //for sizing whole canvas
+        const width = 400;
+        const height = 600;
+
+        //paddle width and height
+        let paddleWidth = 60;
+        let paddleHeight = 10;
+
+        canvas.width = width;
+        canvas.height = height;
+
+        //create a rectangle (full rectangle/board inside canvas)
+        context.fillStyle = "black";
+        context.fillRect(0, 0, width, height);
+
+        //create a paddle
+        context.fillStyle = "white"
+        //also centering the paddle (center in x-axis) (5px down from top/bottom)
+        context.fillRect((width/2) - (paddleWidth / 2), 5, paddleWidth, paddleHeight);
+        context.fillRect((width/2) - (paddleWidth / 2), height - paddleHeight - 5, paddleWidth, paddleHeight);
+
+        //dotted line in center
+        context.strokeStyle = "white";
+        context.beginPath(); 
+        context.setLineDash([7, 4]);
+        context.moveTo(0,height/2);
+        context.lineTo(width,height/2);
+        context.stroke();
+
+        //creating a ball
+        context.fillStyle = "white";
+        context.beginPath();
+        context.setLineDash([]); //for removing dashed line property
+        //context.arc(x-center, y-center, radius, startAngle(radian), endAngle(radian))
+        //Math.PI = 180 degree
+        context.arc(width/2,height/2, 10,0, 2*Math.PI);
+        context.fill();
+
+        //players score
+
+        context.font = "30px Arial";
+        //fillText("text", x-position, y-position)
+        context.fillText(15, 10, (height/2)-20);
+        context.fillText(10, 10, (height/2)+40);
+
+
+    </script>
+
+</body>
+
+</html>

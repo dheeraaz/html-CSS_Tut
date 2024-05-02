@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        /* element selector */
+        h3 {
+            color: brown;
+        }
+
+        /* class selector */
+        .redcol {
+            color: red;
+        }
+
+        .bgBlue {
+            background-color: blue;
+        }
+
+        /* id selector */
+        #secondpara {
+            color: rgb(31, 250, 2);
+        }
+
+        .bgOrange {
+            background-color: orangered;
+        }
+
+        /* element selector */
+        div {
+            color: purple;
+        }
+
+        #thirdpara {
+            color: red;
+        }
+
+        /* GROUPING SELECTOR */
+        span,
+        footer {
+            color: rgb(49, 9, 145);
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Selectors Tutorial</h3>
+    <p id="firstpara" class="redcol bgBlue">This is simple paragraph to demonstrate selectors in css</p>
+    <p id="secondpara" class="bgOrange">This is another simple paragraph to demonstrate selectors in css</p>
+    <div>
+        <p class="bgOrange">This is yet another simple paragraph to demonstrate selectors in css and it is inside div.
+        </p>
+        <p>This is second paragraph inside div-tag</p>
+        <p id="thirdpara">This is third paragraph inside div-tag</p>
+        <span>This is span paragraph. This paragraph is for group selectors</span>
+    </div>
+    <footer>This is footer-for group selectors</footer>
+
+</body>
+
+</html>

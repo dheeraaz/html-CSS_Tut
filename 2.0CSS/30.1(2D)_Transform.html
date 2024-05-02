@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D_Transform</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+            background-color:peachpuff;
+            position: relative;
+            overflow: hidden;
+        }
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: 0.6s;
+        }
+        .box:hover img{
+            transform: scale(1.2, 1.2);
+        }
+        .op{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0, 0, 0.6);
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            display: none;
+        }
+        .box:hover .op{
+            display: block;
+        }
+        .hover{
+            position: absolute;
+            background-color: red;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 8px;
+            border-radius: 12px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            transition: 0.6s;
+        }
+        .box:hover .hover{
+            transform: translateY(-400px) rotate(180deg);
+        }
+        .box1{
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            position: absolute;
+            top: 47%;
+        }
+        .a{
+            transform: translateX(-50px);
+            transition: 0.6s;
+        }
+        
+        .b{
+            transform: translateX(400px);
+            transition: 0.6s;
+        }
+        .box:hover .a{
+            transform: translateX(156px);
+        }
+        .box:hover .b{
+            transform: translate(204px);
+        }
+        .box1 i{
+            color: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="sunset.jpg" alt="sunset-img">
+        <div class="op"></div>
+        <div class="hover">Hover Me</div>
+        <div class="a box1"><i class="fas fa-hand-point-right"></i></div>
+        <div class="b box1"><i class="fas fa-hand-point-left"></i></div>
+    </div>
+</body>
+</html>

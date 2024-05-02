@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Animation</title>
+    <style>
+        h3 {
+            position: relative;
+            display: inline-block;
+
+        }
+
+        h3::before {
+            content: "";
+            /* ----writing content inside before tag is must----*/
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: blue;
+            height: 2px;
+            width: 1%;
+            transition: 0.5s linear;
+            /* display: none; */
+
+            /* ----display none/block garera kaam garena---- */
+            visibility: hidden;
+        }
+
+        h3:hover::before {
+            /* display: block; */
+            width: 100%;
+            visibility: visible;
+        }
+
+        h2 {
+            position: relative;
+            display: inline-block;
+
+        }
+
+        h2::before {
+            content: "";
+            /* ----writing content inside before tag is must----*/
+            position: absolute;
+            top: 100%;
+            background-color: blue;
+            width: 1%;
+            height: 2px;
+            transition: 0.5s linear;
+            /* --kunai pani kura lai x-axis ma perfectly centre ma lyaunu xa vaney  
+            position absolute garera left bata 50% ra transform: translateX(-50%); garna parxa*/
+            left: 50%;
+            transform: translateX(-50%);
+
+            /* display: none; */
+
+            /* ----display none/block garera kaam garena---- */
+            visibility: hidden;
+        }
+
+        h2:hover::before {
+            /* display: block; */
+            width: 100%;
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Hello Dhiraj</h3>
+    <h2>Hello Everyone</h2>
+
+</body>
+
+</html>

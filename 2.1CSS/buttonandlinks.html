@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buttons and links</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rosybrown;
+            padding: 25px;
+            margin: 10px auto;
+            width: 700px;
+        }
+        .btn{
+            background: crimson;
+            padding: 6px;
+            border: 2px solid purple;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+            color: black;
+            text-decoration:underline;
+        }
+        
+        a:hover,button:hover{ /* the following are pseudo selector*/ /*while moving cursor*/
+            color:white;
+            background-color: rgb(95, 4, 4);
+        }
+        a:visited{
+            background-color: royalblue;
+        }
+        a:active{ /*during clicking*/
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="cont1" class="container">
+        <h3>This is my Heading</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, itaque perferendis assumenda iusto quisquam sunt eos cupiditate incidunt neque blanditiis. Doloremque ullam in fugiat quos itaque. Alias ratione laboriosam soluta non labore provident. Iste!</p>
+        <a href="https://meroshare.cdsc.com.np/#/login" class="btn" target="_blank">Read more</a>
+        <button class="btn">contact us</button>
+    </div>
+    
+    
+</body>
+</html>

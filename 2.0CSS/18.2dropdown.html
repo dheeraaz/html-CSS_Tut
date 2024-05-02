@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            margin: 150px; font-family: sans-serif;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            float: left;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            padding: 20px;
+        }
+
+        nav ul li ul {
+            position: absolute;
+            top: 45px;
+            left: 0;
+            display: none;
+        }
+
+        nav ul li ul li {
+            line-height: 43px;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: grey;
+        }
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home <i class="fas fa-angle-down"></i></a>
+                <ul>
+                    <li><a href="">Home1</a> </li>
+                    <li><a href="">Home2</a> </li>
+                    <li><a href="">Home3</a> </li>
+                    <li><a href="">Home4</a> </li>
+                </ul>
+            </li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Contacts <i class="fas fa-angle-down"></i> </a> 
+                <ul>
+                    <li><a href="">Contact1</a> </li>
+                    <li><a href="">Contact2</a> </li>
+                    <li><a href="">Contact3</a> </li>
+                    <li><a href="">Contact4</a> </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

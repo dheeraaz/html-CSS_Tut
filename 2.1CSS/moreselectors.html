@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Selectors</title>
+    <style>
+        h1 {
+            color: white;
+            background-color: tomato;
+            text-align: center;
+        }
+        /* only affects the p which us inside li again li should be inside the div  */
+        /* div li p{
+            color: black;
+            background-color: purple;
+        } */
+
+        /* this affects all the p inside the div */
+        /* div p{
+            color: red;
+            background-color: rgb(103, 236, 225);
+            font-weight: bold;
+        } */
+
+        /* this affects the p which is just inside the div i.e p should be direct child of div  */
+        /* div>p {
+            color: chartreuse;
+            background-color: yellow;
+        } */
+
+        /* this doesnt affect the p which is inside the div. this only affects p which is sibling of div, i.e div should be just before the p  */
+        div+p {
+            color: blue;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>more about the selectors tutorial</h1>
+    <div class="conatiner">
+        <div class="row">
+            <ul type="none">
+                <li>
+                    <p>This is first paragraph which is inside the ul</p>
+                </li>
+            </ul>
+            <p>this is second paragraph which is inside class row</p>
+        </div>
+        <P>this is third paragraph which is inside the class container</P>
+    </div>
+    <p>this fourth paragraph which is independent</p>
+</body>
+
+</html>

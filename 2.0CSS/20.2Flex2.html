@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 2</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        .box{
+            background-color: pink; display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: space-around;
+        }
+        .a{
+            border: 2px solid red;padding: 50px; width: 200px;
+        }
+        .u{
+            flex-basis: 300px;
+        }
+        .v{
+            flex-grow: 1;
+        }
+        .w{
+            flex-shrink: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="a" style="order: 4;">A</div>
+        <div class="a w" style="order: 3;"><h1>B</h1></div>
+        <div class="a u" style="order: 1;"><h4>C</h4></div>
+        <div class="a v" style="order: 2;">D</div>
+    </div>
+    <div>
+        <h3>Flex property for child content</h3>
+        <p>1.order <br> style="order: n;" >>the value of n determines which child content comes first</p>
+        <p>2.flex basis <br> flex-basis: 500px;, >>it is better way of giving width size to specific child content</p>
+        <p>3.flex-grow <br>  flex-grow: 1; >> default value is 0. yo property use gareko child ko width aru ko vanda double(2x) hunxa kina ki aru ko zero xa. yedi 1 ko thau ma 2 vayo vane (3x) times ley grow hunxa</p>
+        <p>4.flex-shrink <br>flex-shrink: 3;>>specifies how much flex child item shrinks relative to rest of the flex child items</p>
+        <p>5.flex <br> flex: grow shrink flex-basis; E.G. flex:0 1 200px; >> coombination of flex-grow flex-shrinkand  flex basis</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Property</title>
+    <style>
+        .main {
+            padding: 20px;
+            background-color: blanchedalmond;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* yo vaneko column ko width ho >> 3 ota column jasko width auto adjust hoss*/
+
+            /* column-gap: 20px;
+            row-gap: 40px; */
+
+            /* combination of column gap and row gap>> gap: row column; */
+            gap: 40px 20px;
+        }
+
+        .box {
+            padding: 60px;
+            border: 2px solid black;
+        }
+        .a{
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+        /* combination of two property: grid column:n/(n+n') */
+        }
+        .b{
+            /* grid-column:1/3; */
+            grid-row: 2/4;
+        }
+        .d{
+            grid-row:2/4; grid-column:3;
+        }
+        .f{
+            grid-column: 1/4;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box a"><b>A</b> <br>
+            <p>grid ma box count garni haina. always count the number of lines <br> number of lines= 1+ number of box
+            </p>
+        </div>
+        <div class="box b"><b>B</b> <p>property used  <br>
+            grid-row: 2/4; >> horizontal line 2 ra 4 merge gareko xa</p></div>
+        <div class="box c">C</div>
+        <div class="box d"><b>D</b> <br> <p>property used <br> grid-column:3; >> grid-template ko kunnn chai column ma yo box lai rakhni vanera define garna</p></div>
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+    </div>
+</body>
+
+</html>

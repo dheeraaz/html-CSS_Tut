@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form 3</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>HTML FORM 3</legend>
+            <p> 'for' and 'id' connects each other <br> "name" attribue is for sending value <br>see the above url after
+                clicking submit button <br> 'value' attribute inside option tag sends boy or girls instead of male and
+                female <br> <b>see the "selected" attribute inside option(female)</b></p>
+            <label for="linga">Select Gender</label> <select name="gender" id="linga">
+                <option value="boy">Male</option>
+                <option value="girls" selected>Female</option>
+                <option value="none">Others</option>
+            </select>
+            <hr>
+            <p>for multiple data selection simply use "multiple" attribute <br> see the "size" attribute also by
+                removing it <br> <b>note: for selecting multiple data
+                    presss "ctrl" key and select multiple data </b> </p>
+            <label for="falfull">Favourite Fruits</label>
+            <select name="fruits" id="falfull" multiple size="3">
+                <option value="syau">Apple</option>
+                <option value="suntala">Orange</option>
+                <option value="kera">Banana</option>
+                <option value="amba">Guava</option>
+                <!-- <option>Apple</option>
+                <option>Orange</option>
+                <option>Banana</option>
+                <option>Guava</option> -->
+            </select>
+            <hr>
+            <p>different groups of choice</p>
+            <label for="khanekura">Foods</label>
+            <select name="foods" id="khanekura" multiple>
+                <optgroup label="FRUITS">
+                    <option value="syau">Apple</option>
+                    <option value="suntala">Orange</option>
+                    <option value="kera">Banana</option>
+                    <option value="amba">Guava</option>
+                </optgroup>
+                <optgroup label="VEG">
+                    <option value="cauli">Cauliflower</option>
+                    <option value="banda">Cabbage</option>
+                    <option value="gajar">Carrot</option>
+                    <option value="mula">Raddish</option>
+                </optgroup>
+            </select>
+            <hr>
+            <p>Example of checkbox (multiple choice possible)</p>
+            <p><b>input ma value diyena vaney, form submit garda book=on janxa <br>tesaile book=math/science jaoss vanna
+                    lai value dina parxa</b></p>
+            <label for="kitab">Select Books</label>
+            <input type="checkbox" name="book" id="kitab" value="math"> MATH
+            <input type="checkbox" name="book" id="kitab" value="science"> SCIENCE
+            <input type="checkbox" name="book" id="kitab" value="english"> ENGLISH
+            <hr>
+            <p>Example of radio (multiple choice not possible)</p>
+            <label for="linga">Gender</label>
+            <input type="radio" name="gender" id="linga" value="male"> MALE
+            <input type="radio" name="gender" id="linga" value="female"> FEMALE
+            <input type="radio" name="gender" id="linga" value="others"> OTHERS
+            <hr>
+            <p> <b> here "list" attribute inside input tag connects input tag and datalist tag(id attribute) </b>
+                <br><b>NOTE:data are written only inside "value" attribute </b> <br> <b>datalist tag is used for showing
+                    suggestion, you can type whatever you want</b>
+            </p>
+            Serach Country <input type="text" name="desh" list="xyz">
+            <datalist id="xyz">
+                <option value="Nepal"></option>
+                <option value="India"></option>
+                <option value="Pakistan"></option>
+                <option value="Bhutan"></option>
+            </datalist>
+            <hr> 
+            <p>simply input type is date</p>
+            birth date <input type="date" name="janmasaal">
+            <hr>
+            <label for="aaa">Simple</label> <input type="text" name="sadharan" id="aaa" value="Changeable Value">
+            <hr>
+            <p><b>it is because of readonly attribute, it passes the value to databases</b></p>
+            <label for="bbb">Simple1</label> <input type="text" name="sadharan1" id="bbb" value="NON Changeable Value"
+                readonly>
+            <hr>
+            <p><b>"disabled" attribute shows values to users but dosnt pass values to the database</b></p>
+            <label for="ccc">Simple2</label> <input type="text" name="sadharan2" id="ccc" value="non changeable"
+                disabled>
+            <hr>
+
+            <input type="reset">
+            <button>submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

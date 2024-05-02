@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid_area</title>
+    <style>
+        .container {
+            padding: 20px;
+            background-color: blanchedalmond;
+            display: grid;
+            grid-template-areas: 'h h h h'
+                'n n n r'
+                'l m m r'
+                'f f f f'
+
+            ;
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 50px;
+        }
+
+        .header {
+            grid-area: h;
+        }
+
+        .navbar {
+            grid-area: n;
+        }
+
+        .left {
+            grid-area: l;
+        }
+
+        .mid {
+            grid-area: m;
+        }
+
+        .right {
+            grid-area: r;
+        }
+
+        .footer {
+            grid-area: f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header box">HEADER</div>
+        <div class="navbar box">NAVABAR</div>
+        <div class="left box">LEFT</div>
+        <div class="mid box">MID</div>
+        <div class="right box"><b>RIGHT</b>
+            <p> parent ma chai-- <b> display:grid</b> garney <br>individual child box ko naming garna parxa. tesko lagi,
+                individual box ma gayera-- <b> grid-area: name</b> <br>yo vaneko chai naming gareko ho <br> number of column
+                sabai row ma barabar huna parxa <br> kunai cell eliminate garna paryo vani tyo cell ko css ma dot(.) rakhne</p><br>
+
+        </div>
+        <div class="footer box">FOOTER</div>
+    </div>
+</body>
+
+</html>

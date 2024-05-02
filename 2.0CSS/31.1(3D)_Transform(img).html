@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.box{
+    border: 3px solid orange;
+    width: 400px;
+    height: 400px;
+    
+    /* for centering box  */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* -----for 3d Effect---- */
+    perspective: 600px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: 0.9s;
+}
+img:hover{
+    transform: rotateY(60deg);
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="/bimg1.jpg" alt="">
+    </div>
+</body>
+</html>

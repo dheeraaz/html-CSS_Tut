@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxmodel,padding,border,margin</title>
+    <style>
+        *{
+          box-sizing: border-box;  /*universal selector--keeps the box size constant even if the contents changes */
+        }
+        body{
+            background-color: #d8beea;
+        }
+        .container{
+            background-color: #daecec;;
+            border:2px solid #121267;
+            width: 960px;
+            border-radius: 20px;
+            /* we can set padding and margin for top botto right and left like this */
+            /*contracts the content inside box*/
+             /* padding: 30px;  */
+             padding: 24px 14px; /* padding: y(top/bottom) x(left/right)*/
+
+            /* padding-left: 30px; */
+            /* padding-top: 40px; */
+            
+             /*brings gap outside the box*/
+            /* margin: 20px; */
+            /* margin-bottom: 20px; */
+            margin: 10px 10px 30px 20px; /*margin top right bottom left (TRBL)*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my first heading</h3>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ad aspernatur harum excepturi
+            libero provident rerum, veritatis alias commodi suscipit.</p>
+    </div>
+    <div class="container">
+        <h3>This is my second heading</h3>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ad aspernatur harum excepturi
+            libero provident rerum, veritatis alias commodi suscipit.</p>
+    </div>
+    <div class="container">
+        <h3>This is my third heading</h3>
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ad aspernatur harum excepturi
+            libero provident rerum, veritatis alias commodi suscipit.</p>
+    </div>
+
+</body>
+
+</html>

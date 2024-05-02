@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITION PRACTICE</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+.box{
+    width: 500px; 
+    height: 500px; 
+
+    /* Important for adding images */
+    background-image: url(/sunset.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+    color: white; 
+    position: relative;
+    margin: 100px auto; 
+}
+h2{
+position: absolute; top: 20px; left: 30%; display: none; 
+}
+.box:hover h2{
+    display: block;
+}
+h3{
+position: absolute; bottom: 20px; left: 36%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>HELLO NEPAL</h2>
+        <h3>HELLO DHIRAJ</h3>
+    </div>
+</body>
+</html>

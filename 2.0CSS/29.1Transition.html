@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        .abc {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            transition: 2s ease-in-out;
+        }
+
+        .abc:hover {
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        }
+
+        .abc1 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            transition: width 2s, height 4s;
+        }
+
+        .abc1:hover {
+            width: 300px;
+            height: 400px;
+            background-color: orange;
+        }
+
+        .abc2 {
+            width: 300px;
+            height: 300px;
+            background-color: violet;
+            transition: 2s ease-in;
+            transition-delay: 1s;
+        }
+
+        .abc2:hover {
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="abc">
+        transition dinu vaneko, kati time lagayera change hoss vanni ho.
+        <br> yesko aru properties vaneko linear, ease, ease-in, ease-out, ease-in-out,etc ho
+    </div>
+    <div class="abc1">
+
+    </div>
+    <div class="abc2">
+        This box has delay property<<"transition-delay:2s"
+        <br>
+        <br>
+        shorthand property for this is: <br>
+        transition: timing type delay;
+        <br>
+        transition:3s linear 1s;
+        
+    </div>
+</body>
+
+</html>

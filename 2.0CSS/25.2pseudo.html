@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements and Pseudo class </title>
+    <style>
+        /* CSS Pseudo Elements(::) */
+        p::first-letter {
+            color: red;
+            font-size: 36px;
+        }
+
+        p::first-line {
+            background-color: silver;
+        }
+
+        h1::before {
+            content: url(plus\ icon.jpg); /*image ko naam ma space xa vaney, use \ to escape space character*/
+        }
+
+        a::selection {
+            background: violet;
+            text-decoration:none;
+        }
+
+        /* CSS Pseudo class(:) */
+
+        p:first-child {
+            background-color: red
+        }
+
+        p:last-child {
+            background-color: blue;
+        }
+
+        p:nth-child(2) {
+            background: wheat;
+        }
+
+        p:nth-child(3) {
+            background: turquoise;
+        }
+
+        p:nth-child(odd) {
+            background: rgb(190, 28, 196);
+        }
+
+        p:nth-child(even) {
+            background: yellow;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        a:link {
+            color: thistle;
+        }
+
+        a:hover {
+            background: yellow;
+        }
+
+        a:visited {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://abc.com" target="_blank"> select this line. when this line is selected its color changes violet
+        while other texts changes
+        default(blue). i have applied textdecoration property</a>
+    <h1>hello everyone</h1>
+    <p> <b> Pseudo elements use garda >> (::) use garna parxa</b> <br>
+        totam magnam numquam. Blanditiis, reprehenderit sed consequatur debitis autem praesentium ipsam aliquam maiores
+        in, aperiam deserunt eligendi numquam illo. Laudantium deserunt suscipit quo eum necessitatibus in, dolorem quas
+        ipsum est incidunt beatae odio, commodi ullam impedit iusto aliquid, natus error dignissimos earum. Similique,
+        accusamus repellendus? Porro laudantium rerum praesentium velit amet harum ullam temporibus sunt aut obcaecati
+        asperiores assumenda provident officia est ut explicabo illo consectetur labore ipsa ducimus ad, ipsam numquam
+        iste et. Tempora, dicta laudantium eius pariatur veniam a architecto? Quis deserunt aut, exercitationem ipsa
+        provident nesciunt animi praesentium nemo molestias repellendus ducimus. Veniam distinctio, nesciunt voluptatum
+        explicabo sit facilis reiciendis dignissimos alias doloribus expedita, facere eaque odio nulla, quos modi
+        asperiores totam harum ducimus aspernatur incidunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Accusantium dolorem cupiditate dolor? Aspernatur hic dolore dolorum blanditiis veritatis adipisci magni. Facere
+        officiis ipsam vero modi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nostrum minima fugit modi tenetur nisi
+        corrupti, laborum est, quia, sit amet rerum labore! Temporibus cumque ea sit atque ipsam deleniti, obcaecati
+        totam magnam numquam. Blanditiis, reprehenderit sed consequatur debitis autem praesentium ipsam aliquam maiores
+        in, aperiam deserunt eligendi numquam illo. Laudantium deserunt suscipit quo eum necessitatibus in, dolorem quas
+        ipsum est incidunt beatae odio, commodi ullam impedit iusto aliquid, natus error dignissimos earum. Similique,
+        accusamus repellendus? Porro laudantium rerum praesentium velit amet harum ullam temporibus sunt aut obcaecati
+        asperiores assumenda provident officia est ut explicabo illo consectetur labore ipsa ducimus ad, ipsam numquam
+        iste et. Tempora, dicta laudantium eius pariatur veniam a architecto? Quis deserunt aut, exercitationem ipsa
+        provident nesciunt animi praesentium nemo molestias repellendus ducimus. Veniam distinctio, nesciunt voluptatum
+        explicabo sit facilis reiciendis dignissimos alias doloribus expedita, facere eaque odio nulla, quos modi
+        asperiores totam harum ducimus aspernatur incidunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Accusantium dolorem cupiditate dolor? Aspernatur hic dolore dolorum blanditiis veritatis adipisci magni. Facere
+        officiis ipsam vero modi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nostrum minima fugit modi tenetur nisi
+        corrupti, laborum est, quia, sit amet rerum labore! Temporibus cumque ea sit atque ipsam deleniti, obcaecati
+        totam magnam numquam. Blanditiis, reprehenderit sed consequatur debitis autem praesentium ipsam aliquam maiores
+        in, aperiam deserunt eligendi numquam illo. Laudantium deserunt suscipit quo eum necessitatibus in, dolorem quas
+        ipsum est incidunt beatae odio, commodi ullam impedit iusto aliquid, natus error dignissimos earum. Similique,
+        accusamus repellendus? Porro laudantium rerum praesentium velit amet harum ullam temporibus sunt aut obcaecati
+        asperiores assumenda provident officia est ut explicabo illo consectetur labore ipsa ducimus ad, ipsam numquam
+        iste et. Tempora, dicta laudantium eius pariatur veniam a architecto? Quis deserunt aut, exercitationem ipsa
+        provident nesciunt animi praesentium nemo molestias repellendus ducimus. Veniam distinctio, nesciunt voluptatum
+        explicabo sit facilis reiciendis dignissimos alias doloribus expedita, facere eaque odio nulla, quos modi
+        asperiores totam harum ducimus aspernatur incidunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Accusantium dolorem cupiditate dolor? Aspernatur hic dolore dolorum blanditiis veritatis adipisci magni. Facere
+        officiis ipsam vero modi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nostrum minima fugit modi tenetur nisi
+        corrupti, laborum est, quia, sit amet rerum labore! Temporibus cumque ea sit atque ipsam deleniti, obcaecati
+        totam magnam numquam. Blanditiis, reprehenderit sed consequatur debitis autem praesentium ipsam aliquam maiores
+        in, aperiam deserunt eligendi numquam illo. Laudantium deserunt suscipit quo eum necessitatibus in, dolorem quas
+        ipsum est incidunt beatae odio, commodi ullam impedit iusto aliquid, natus error dignissimos earum. Similique,
+        accusamus repellendus? Porro laudantium rerum praesentium velit amet harum ullam temporibus sunt aut obcaecati
+        asperiores assumenda provident officia est ut explicabo illo consectetur labore ipsa ducimus ad, ipsam numquam
+        iste et. Tempora, dicta laudantium eius pariatur veniam a architecto? Quis deserunt aut, exercitationem ipsa
+        provident nesciunt animi praesentium nemo molestias repellendus ducimus. Veniam distinctio, nesciunt voluptatum
+        explicabo sit facilis reiciendis dignissimos alias doloribus expedita, facere eaque odio nulla, quos modi
+        asperiores totam harum ducimus aspernatur incidunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Accusantium dolorem cupiditate dolor? Aspernatur hic dolore dolorum blanditiis veritatis adipisci magni. Facere
+        officiis ipsam vero modi.</p>
+</body>
+
+</html>

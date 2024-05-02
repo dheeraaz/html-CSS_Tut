@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Tutoial</title>
+</head>
+<body>
+
+    <canvas id="myCanvas" height="200" width="200" style="border: 2px solid red;"></canvas>
+
+    <script>
+        const canvas = document.getElementById("myCanvas");
+
+        const context = canvas.getContext("2d");
+        /*
+        The canvas element has a dom method called getContext, used to obtain the rendering 
+        context and its drawing functions. This function takes one parameter, i.e the type of context(2d)
+        */
+       
+        //top-left = 0,0
+        //bottom-right = 200, 200 [size of canvas]
+        context.strokeStyle = "blue";
+        context.beginPath();
+        context.moveTo(0,0); //starting point
+        context.lineTo(200,200); //end point
+        context.stroke(); //join two points
+
+        context.strokeStyle = "Yellow";
+        context.beginPath(); //it is important because it erases previous properties of stroke, i.e. color: it creates new path allowing to add new color
+        context.moveTo(200,0);
+        context.lineTo(0,200);
+        context.stroke();
+
+        context.strokeStyle = "green";
+        context.beginPath();
+        context.moveTo(100,0);
+        context.lineTo(100,200);
+        context.stroke();
+
+        
+        context.strokeStyle = "orange";
+        context.beginPath();
+        context.moveTo(0,100);
+        context.lineTo(200,100);
+        context.stroke();
+        
+
+    </script>
+
+</body>
+</html>

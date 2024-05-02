@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML AND CSS</title>
+    <link rel="stylesheet" href="inlineandexternal.css">
+    <style>
+        p {
+            color: rgb(89, 0, 255);
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- we can add css to html by three methods,inline,internal and external -->
+    <h2 style="color:red; background-color:royalblue">HTML AND CSS TUTORIAL(used inline css)</h2>
+    <!--inline css, makes code messier.so try to use internal and external css-->
+    <p>In this section i have uesd internal css</p>
+    <p> i have targetted all the paragraph. For targetting individual paragraph we need id and class </p>
+    <span>Now I am going to use external css which is saved as inlineandexternal.css...</span>
+    <span>For this I have to link external CSS file inside &lt;head&gt;</span>
+    <div>
+        <strong>Inline CSS has higher precedence. And in case of external and internal css, the css which is in last
+            position inside &lt;head&gt; has higher precedence </strong>
+    </div>
+</body>
+
+</html>

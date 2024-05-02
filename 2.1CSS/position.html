@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute, relative,fixed and sticky</title>
+    <style>
+        /*CSS position: static(default),relative, position, fixed and sticky */
+        .container {
+            border: 2px solid black;
+            background-color: blanchedalmond;
+            height: 3000px;
+            /* use while seeing property of fixed */
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            height: 150px;
+            width: 150px;
+            margin: 2px;
+        }
+
+        #box3 {
+            /* position: relative; */
+            /*position relative to its normal position and will leave gap in its normal position, matlab aafno normal position bata kati change huni*/
+
+            /* position: absolute; */
+            /*position relative to its parent and doesnt leave gap at its original position. in this case parent is .container,,matlab parents bata kati move garni. top left right bottom*/
+
+            /* left: 30px;
+            top: 40px; */
+
+            position: fixed;
+            /* position relative to browser window.it holds the position fixed at the same place even while scrolling  */
+
+            /* right: 10px;
+            bottom: 10px; */
+            
+            /* position: sticky; */
+            /* it previously acts as position:relative and when it is scrolled down it acts as position:fixed */
+            top: 30px;
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box1" class="box">1</div>
+        <div id="box2" class="box">2</div>
+        <div id="box3" class="box">3</div>
+        <div id="box4" class="box">4</div>
+    </div>
+</body>
+
+</html>
